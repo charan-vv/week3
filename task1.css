@@ -3,20 +3,30 @@
 #hideBox{
     display: none;
 }
+.accordionHead button{
+    width: 100%;
+    text-align: start;
+    border-top: transparent;
+    border-left:transparent;
+    border-right:transparent;
+    background-color: transparent;
+}
 .accordionHead
 {
         display: flex;
         align-items: center;
         text-align: start;        
         width: 100%;
+        cursor: pointer;
 }
 .accordionHead::after{
-    content: "+";
+    content: "-";
     font-size: 30px;
     margin-left: auto;
 }
 .activeHeader::after
 {
+
     content: "";
 }
 .accordionBody{
@@ -24,12 +34,31 @@
     background-color: aliceblue;
 }
 /* tabBar */
-.tabBar{
+.tab{
     button{
-        border: none;
+        width: 100%;
+        border-top:transparent;
+        border-left: transparent;
+        border-right:transparent;
+        border-bottom: 5px solid seashell;
         background-color: transparent;
         
     }
+    button:hover{
+        display: inline-block;
+        color: rgb(1, 14, 14);
+        background-color: aqua;
+        transition: 2s;
+    }
+}
+.tabcontent{
+    text-align: start;
+    display: none;
+    
+}
+.active{
+    background-color:rgb(6, 163, 110);
+    display: block;
 }
 /* counterTime */
 #countlabel{

@@ -15,62 +15,91 @@
 </head>
 <body>
     <!-- Box Hide and Show  using Button -->
-    <section class="container text-center text-light fs-4">
+    <section class="container text-center fs-4">
+        <h4>Box Hide and Show  using Button</h4>
         <button class="bg-danger text-light" onclick="hiddenBox()">Show/Hide</button>
         <div id="hideBox" class="text-dark fs-6 mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque iusto, 
             deleniti ratione ex a praesentium assumenda, esse corrupti iste expedita, 
             nobis animi provident? Porro et maxime dolorum distinctio voluptatem!
         </div>
-    </section>
+    
         <!-- accordion -->
-        <div class="accordion  mt-5 container text-center">
-
-                <div class="accordionHead" >
-                    <h4>HTML</h4>
-                </div>
-                    <div class="accordionBody">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
-                         corporis asperiores autem similique accusantium, vitae esse nihil
-                          rerum cumque hic incidunt veritatis, libero labore commodi sint
-                           aperiam beatae eaque. Cupiditate!
-                    </div>
-
-                    <div class="accordionHead   " >
-                        <h4 >CSS</h4>
-                    </div>
-                    <div class="accordionBody">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
-                             corporis asperiores autem similique accusantium, vitae esse nihil
-                              rerum cumque hic incidunt veritatis, libero labore commodi sint
-                               aperiam beatae eaque. Cupiditate!
-                    </div>
-
-                    <div class="accordionHead  " >
-                        <h4 >Javascript</h4>
-                    </div>
-                    <div class="accordionBody">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
-                             corporis asperiores autem similique accusantium, vitae esse nihil
-                              rerum cumque hic incidunt veritatis, libero labore commodi sint
-                               aperiam beatae eaque. Cupiditate!
-                    </div>
-                    <!-- tabBar-->
-                    <div class="tabBar text-start mt-5 ">
-                        <button ><b>HTML</b></button>
-                        <button><b>CSS</b></button>
-                        <button><b>Javascript</b></button>
-                    </div>
-
-                    <!--counter time  -->
-                    <h2 id="countlabel">0</h2>
-                    <div  class="counters">
-                        <button id="btnRer">-</button>
-                        <button id="btnRes">Reset</button>
-                        <button id="btnfor">+</button>
-                    </div>
+        <div class="accordion  mt-5 text-center">
+            <h4>Accordion</h4>
+            <div class="accordionHead" >
+                <button>HTML</button>
+            </div>
+            <div class="accordionBody">
+                HyperText Markup Language or HTML is the standard markup language for 
+                documents designed to be displayed in a web browser. It defines the 
+                content and structure of web content. It is often assisted by 
+                technologies such as Cascading Style Sheets (CSS) and scripting 
+                languages such as JavaScript.
             </div>
             
+            <div class="accordionHead" >
+                <button >CSS</button>
+            </div>
+            <div class="accordionBody">
+                Cascading Style Sheets (CSS) is a style sheet language used for 
+                specifying the presentation and styling of a document written in
+                a markup language such as HTML or XML (including XML dialects 
+                such as SVG, MathML or XHTML).[1] CSS is a cornerstone 
+                technology of the World Wide Web, alongside HTML and JavaScript
+            </div>
+            
+            <div class="accordionHead" >
+                <button >Javascript</button>
+            </div>
+            <div class="accordionBody">
+                JavaScript often abbreviated as JS, is a programming language and core 
+                technology of the Web, alongside HTML and CSS. 99% of websites use 
+                JavaScript on the client side for webpage behavior.
+            </div>
+        </div>             
+            <!-- tabBar-->
+            <h4>TabBar</h4>
+            <div class="tab d-flex mt-5">
+                <button class="tablinks" onclick="openCity(event, 'html')">HTML</button>
+                <button class="tablinks" onclick="openCity(event, 'css')">CSS</button>
+                <button class="tablinks" onclick="openCity(event, 'js')">JavaScript</button>
+              </div>
+              
+              <!-- Tab content -->
+              <div id="html" class="tabcontent">
+                <h3>Html</h3>
+                <p>HyperText Markup Language or HTML is the standard markup language for 
+                    documents designed to be displayed in a web browser. It defines the 
+                    content and structure of web content. It is often assisted by 
+                    technologies such as Cascading Style Sheets (CSS) and scripting 
+                    languages such as JavaScript.</p>
+              </div>
+              
+              <div id="css" class="tabcontent">
+                <h3>CSS</h3>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for 
+                    specifying the presentation and styling of a document written in
+                    a markup language such as HTML or XML (including XML dialects 
+                    such as SVG, MathML or XHTML).[1] CSS is a cornerstone 
+                    technology of the World Wide Web, alongside HTML and JavaScript</p>
+              </div>
+              
+              <div id="js" class="tabcontent">
+                <h3>JavaScript</h3>
+                <p>JavaScript often abbreviated as JS, is a programming language and core 
+                    technology of the Web, alongside HTML and CSS. 99% of websites use 
+                    JavaScript on the client side for webpage behavior.</p>
+              </div>      
+            <!--counter time  -->
+            <h4>counter time</h4>
+            <h2 id="countlabel">0</h2>
+            <div  class="counters">
+                <button id="btnRer">-</button>
+                <button id="btnRes">Reset</button>
+                <button id="btnfor">+</button>
+            </div>
+    </section>       
     <!-- javascript link -->
     <script src="task1.js"></script>
 </body>
