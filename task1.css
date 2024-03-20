@@ -1,0 +1,42 @@
+/* Accordion */
+
+#hideBox{
+    display: none;
+}
+.accordionHead
+{
+        display: flex;
+        align-items: center;
+        text-align: start;        
+        width: 100%;
+}
+.accordionHead::after{
+    content: "-";
+    font-size: 30px;
+    margin-left: auto;
+}
+.activeHeader::after
+{
+    content: "+";
+}
+.accordionBody{
+    display: none;
+    background-color: aliceblue;
+}
+/* tabBar */
+.tabBar{
+    button{
+        border: none;
+        background-color: transparent;
+        
+    }
+}
+/* counterTime */
+#countlabel{
+    font-size: 60px;
+}
+
+.counters{
+    font-size: 20px;
+
+}
