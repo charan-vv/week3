@@ -11,13 +11,13 @@
         width: 100%;
 }
 .accordionHead::after{
-    content: "-";
+    content: "+";
     font-size: 30px;
     margin-left: auto;
 }
 .activeHeader::after
 {
-    content: "+";
+    content: "";
 }
 .accordionBody{
     display: none;
