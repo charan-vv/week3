@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="formvalidation.css">
+</head>
+<body>
+  <div class="form">
+    <h2>Form Validation</h2>
+
+    <form name="myForm" onsubmit=" return validateForm()"  action="/forms/displayData.html">
+      <div class="input">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="NAME">
+        <span id="nameError" class="error"></span>
+        <span id="nameErrormsg" class="msg"></span>
+      </div>
+      
+      <div class="input">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="EMAIL ID">
+        <span id="emailError" class="error"></span>
+        <span id="emailErrormsg" class="msg"></span>
+      </div>
+
+      <div class="input">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="PASSWORD">
+        <span id="passwordError" class="error"></span>
+        <span id="passwordErrormsg" class="msg"></span>
+      </div>
+
+      <div class="input">
+        <label for="Confirmpwd">ConfirmPassword:</label>
+        <input type="password" id="cpwd" name="Confirmpwd" placeholder="ConfirmPassword">
+        <span id="passwordNotMatch" class="error"></span>
+        <span id="passwordNotMatchmsg" class="msg"></span>
+      </div>
+      
+      <div class="input">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="PHONE NUMBER">
+        <span id="phoneError" class="error"></span>
+        <span id="phonemsg" class="msg"></span>
+      </div>
+      
+      <div class="field">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <span id="genderError" class="error"></span>
+        
+      </div>
+      
+      <div class="field">
+        <label>Skills:</label>
+        <input type="checkbox" id="html" name="skills[]" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills[]" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="skills[]" value="js">
+        <label for="js">JavaScript</label>
+        <span id="skillsError" class="error"></span>
+      </div>
+      <div class="input">
+        <label for="workLocation">Work Location:</label>
+        <select id="workLocation" name="workLocation">
+          <option value="" selected>Please choose one</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="vizag">Vizag</option>
+          <option value="chennai">Chennai</option>
+        </select>
+        <span id="workLocationError" class="error"></span>
+      </div>
+      <input type="submit" id="submitBtn" value="Submit" > 
+    </form>
+  </div>
+
+<script src="formvalidation.js"></script>
+
+</body>
+</html>
+
+
+
+
+    
+    

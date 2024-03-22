@@ -1,0 +1,37 @@
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 100%;
+  height: auto;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  font-size: 36px;
+  color: #f2f0e7;
+  cursor: pointer;
+
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.nav:hover {
+  color: #1b1919;
+}

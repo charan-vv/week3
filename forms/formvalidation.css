@@ -1,0 +1,70 @@
+
+
+body {
+    background-color: #e7f707;
+}
+#formData{
+    background-color: #e7f707;
+}
+
+
+.form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffff; 
+    border-radius: 5px;
+
+}
+
+.input {
+    margin-bottom: 20px;
+}
+.field{
+    margin-top: 20px;
+}
+
+.label {
+    font-weight: bold;
+}
+#workLocation{
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #adabab;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
+
+.error-msg {
+    font-size: 0.8em;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.error-field {
+    border: 1px solid red;
+}
+

@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height:100vh;
+    background-color: aquamarine;
+}
+#todoForm{
+    color: aliceblue;  
+}
+input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn{
+    border: transparent;
+    background-color: transparent;
+}
